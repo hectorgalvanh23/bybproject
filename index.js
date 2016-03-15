@@ -22,5 +22,14 @@ app.get("/",function(req,res){
 res.render("start");
 
 });
+app.get("/proyect",function(req,res){
+    res.render("proyects");
+    
+});
+
+app.get("/productBacklog",function(req,res){
+    res.render("prodBacklog");
+    
+});
 
 app.listen(8080);

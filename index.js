@@ -32,4 +32,23 @@ app.get("/productBacklog",function(req,res){
     
 });
 
+app.get("/profile", function(req, res){
+    var nombreUsuario="Hector Galvan";
+    var fechaNacimiento="15/09/1992";
+    var curp="";
+    var RFC="";
+    var domicilio="";
+    var habiidades=["habilidad1","habilidad2","habilidad3"]
+    
+    
+   res.render("profile",{nombreUsuario:nombreUsuario,
+                        fechaNacimiento:fechaNacimiento,
+                        curp:curp,
+                        RFC:RFC,
+                        domicilio:domicilio,
+                        habilidades:habiidades
+   }); 
+   
+});
+
 app.listen(8080);
